@@ -1,0 +1,25 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+int counter = 0, number=1;
+bool prime;
+while(counter < 100){
+    prime = 1;
+    for(int i = 2 ; i < number ; i++){
+        if(number%i == 0){
+            prime = 0;
+            break;
+        }
+        }
+    if(prime == 1){
+    counter++;
+    cout<<number<<endl;
+    }
+number++;
+}
+}
